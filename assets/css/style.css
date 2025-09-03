@@ -37,6 +37,10 @@ header {
     background-color: lightcoral;
 }
 
+h1 {
+    font-family: var(--primary-font);
+}
+
 /* Main */
 main {
     background-color: lightblue;
