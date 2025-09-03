@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+/* General Styles */
+
+body {
+    min-height: 100vh; /*Make the body atleast the height of the viewport*/
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+}
+
 /* Header */
 header {
     background-color: lightcoral;
@@ -14,6 +24,7 @@ header {
 /* Main */
 main {
     background-color: lightblue;
+    flex: 1 0 auto;
 }
 
 /* Footer */
