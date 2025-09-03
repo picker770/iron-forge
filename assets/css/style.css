@@ -1,3 +1,17 @@
+
+/* Google Fonts Import  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
+
+
+
+/* CSS Variables  */
+
+:root {
+    --primary-font: 'Inter', sans-serif;
+    --secondary-font: 'Macondo', cursive;
+}
+
 /* Asterisk Wild card  selector to override default styles added by the browser */
 
 * {
@@ -9,11 +23,13 @@
 /* General Styles */
 
 body {
+
     min-height: 100vh; /*Make the body atleast the height of the viewport*/
     display: flex;
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
+    font-family: var(--primary-font);
 }
 
 /* Header */
