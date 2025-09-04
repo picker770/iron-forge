@@ -106,6 +106,8 @@ nav {
 main {
   background-color: lightblue;
   flex: 1 0 auto;
+  /* push the main content down */
+  margin-top: 42px;
 }
 
 /* Footer */
