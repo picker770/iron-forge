@@ -32,6 +32,15 @@ body {
   font-family: var(--primary-font);
 }
 
+h1,h2,h3 {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #252525;  /*Dark gray*/
+
+}
+
+
 /* Header */
 header {
   background-color: #ffffff;
@@ -51,13 +60,8 @@ header a {
   color: inherit;
 }
 
-h1 {
-  font-family: var(--primary-font);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #252525;
-  /*Dark gray*/
-}
+
+
 
 /* Styling the unordered list */
 
@@ -105,12 +109,35 @@ nav {
 
 /* Main */
 main {
-  background-color: lightblue;
   flex: 1 0 auto;
   /* push the main content down */
   margin-top: 42px;
 }
 
+/* Hero section */
+#hero {
+  height:100vh;
+  width: 100%;
+  background: url(../images/hero1.jpg) no-repeat center center/cover;
+  position: relative;
+  
+}
+
+#cover-text {
+  /* Final rgba value sets the opacity so its semi transparent */
+  background-color: rgba(241, 109, 107, 0.7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+
+#cover-text > h2 , #cover-text > h3 {
+  color: #ffffff;
+}
 /* Footer */
 
 #social-networks {
@@ -122,9 +149,9 @@ main {
 }
 
 #social-networks i {
-   font-size: 160%;
-   padding: 5%;
-   color: #3a3a3a;
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
 
 }
 
@@ -170,6 +197,14 @@ main {
     /* Push main content down to accommodate larger header */
     margin-top: 79px;
   }
+
+  /* Hero image */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+   
 
 }
 
